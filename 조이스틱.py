@@ -54,7 +54,7 @@ def solution(name):
             minAns = answer
             while queue:
                 answer, currentName, now, visited = heapq.heappop(queue)
-                if name[now] != currentName[now]:
+                if name[now] != currentName[now]:자
                     tempAns = answer + min(ord(name[now]) - ord('A'), ord('Z') - ord(name[now]) + 1)
                     currentName[now] = name[now]
                     if currentName == name:
